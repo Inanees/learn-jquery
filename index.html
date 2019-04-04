@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<style>
+    
+html {
+        min-height: 100%;
+        font-family: 'Nunito', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+body {
+    background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+.accordion {
+    background: linear-gradient(to bottom right, white, #F8F8F8);
+    max-width: 400px;
+    background: white;
+    margin: 0 auto;
+    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    border-bottom: 1px solid #DDE0E7;
+    color: #2a313a;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 1.5rem;
+}
+
+.accordion-header:hover {
+    background: #F6F7F9;
+}
+
+.accordion-content {
+    display: none;
+    border-bottom: 1px solid #DDE0E7;
+    background: #F6F7F9;
+    padding: 1.5rem;
+    color: #4a5666;
+}
+
+.accordion-header::before {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    background-color: #B1B5BE;
+    margin-right: .75rem;
+}
+
+.active.accordion-header::before {
+    background-color: #FC6468;
+}
+
+html {
+    height: 100%;
+        font-family: 'Nunito', sans-serif;
+        -webkit-font-smoothing: antialiased;
+    }
+
+body {
+    background: linear-gradient(to bottom right, #3D4258, #6670A0, #9688B4);
+    line-height: 1.5;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 30;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.tabs {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.tab-list {
+    padding-bottom: 1rem;
+}
+
+.tab {
+    border: 1px solid transparent;
+    border-radius: 40px;
+    display: inline-block;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    color: rgba(255, 255, 255, .6);
+    font-weight: 700;
+    background: rgba(10, 20, 30, .2);
+}
+
+.tab.active {
+    color: white;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255, 255, 255, .6);
+}
+
+.tab-content {
+    background: linear-gradient(to bottom right, white, #F8F8F8);
+    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 1.5rem;
+    color: #4a5666;
+}
+
+.show {
+    display: block;
+}
+
+nav::after {
+    display: block;
+    content: '';
+    clear: both;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+nav ul li {
+    float: left;
+    position: relative;
+}
+
+nav ul li a {
+    display: block;
+    color: rgba(255, 255, 255, .9);
+    text-decoration: none;
+    padding: 1rem;
+    border-top: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    background: rgba(10, 20, 30, .9);
+}
+
+nav ul li a:focus {
+    color: white;
+}
+
+nav ul li a:not(:only-child)::after {
+    padding-left: 4px;
+    content: ' ▾';
+}
+
+nav ul li ul li {
+    min-width: 190px;
+}
+
+nav ul li ul li a {
+    background: transparent;
+    color: #4a5666;
+    border-bottom: 1px solid #DDE0E7;
+}
+
+nav ul li ul li a:hover,
+nav ul li ul li a:focus {
+    background: #e7e9ef;
+    color: #111;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    margin-top: 6px;
+    background: linear-gradient(to bottom right, white, #F8F8F8) !important;
+    box-shadow: 0 4px 10px rgba(10, 20, 30, .4);
+}
+
+.dropdown::after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: -8px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+}
+
+.dropdown:hover::after {
+    border-bottom: 8px solid #F6F7F9;
+
+.accordion {
+    background: linear-gradient(to bottom right, white, #F8F8F8);
+    max-width: 400px;
+    background: white;
+    margin: 0 auto;
+    box-shadow: 0 15px 20px -15px rgba(0, 0, 0, 0.3), 0 35px 50px -25px rgba(0, 0, 0, 0.3), 0 85px 60px -25px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    border-bottom: 1px solid #DDE0E7;
+    color: #2a313a;
+    cursor: pointer;
+    font-weight: 700;
+    padding: 1.5rem;
+}
+
+.accordion-header:hover {
+    background: #F6F7F9;
+}
+
+.accordion-content {
+    display: none;
+    border-bottom: 1px solid #DDE0E7;
+    background: #F6F7F9;
+    padding: 1.5rem;
+    color: #4a5666;
+}
+
+.accordion-header::before {
+    content: '';
+    vertical-align: middle;
+    display: inline-block;
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    background-color: #B1B5BE;
+    margin-right: .75rem;
+}
+
+.active.accordion-header::before {
+    background-color: #FC6468;
+}
+
+</style>
+
+<head>
+    <meta charset="UTF-8">
+        <title>Home</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito:200,400,700'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+  <br/><br/><br/>
+  <h1><i>Cafe Kita</i></h1>
+  
+  <h3><i>Coffee With Passion</i></h3>
+  <div class="tabs">
+  <nav class="tab-list">
+  <a class="tab active" href="#one">Welcome</a>
+  <a class="tab" href="#two">Contact Us</a>
+  <a class="tab" href="#three">Location</a>
+  </nav>
+  
+  <div id="one" class="tab-content show">Selamat datang ke Cafe Kita.</div>
+  
+  <div id="two" class="tab-content">+60139653717 Zai</div>
+  
+  <div id="three" class="tab-content">E-01-02, Block E Plaza Mont Kiara 2 Jalan Kiara 50480 Kuala Lumpur Malaysia</div>
+  </div>
+  
+<header>
+</header>
+
+<main id="start">
+
+<img src="http://www.gbe.business/wp-content/uploads/2017/02/cafe-latte-art_5166479.jpg" alt="Girl in a jacket" width=100% height=40%>
+
+
+</main>
+
+<nav>
+<ul>
+<li><a href="#!">Menu</a>
+<ul class="dropdown">
+<li><a href="#A">Coffee-Kita</a></li>
+<li><a href="#B">Cake-Kita</a></li>
+<li><a href="#C">Dessert-Kita</a></li>
+</ul>
+</li>
+</ul>
+</nav>
+
+    <h1>Menu</h1>
+    
+    <div class="accordion">
+    <div class="accordion-header"  id="A">Coffee-Kita</div>
+    <div class="accordion-content">
+    <ul>
+    
+    <li><i><sub>ESPRESSO  RM7.00 </sub></i> </li>
+    <li><i><sub>MACCHIATO RM9.00</sub></i></li>
+    <li><i><sub>AFFOGATTO RM12.00</sub></i></li>
+    <li><i><sub>LONG BLACK RM10.00</sub></i></li>
+    <li><i><sub>LUNGO  RM9.00</sub></i></li>
+    <li><i><sub>CAPPUCCINO RM11.00</sub></i></li>
+    <li><i><sub>HOT CHOCOLATE RM12.00</sub></i></li>
+    </ul>
+    
+    </div>
+    
+    <div class="accordion-header" id="B">Cake-Kita</div>
+    <div class="accordion-content"><ul>
+    
+    <li><i><sub>RED VELVET  RM7.00 </sub></i> </li>
+    <li><i><sub>TIRAMISU RM9.00</sub></i></li>
+    <li><i><sub>RAINBOW RM12.00</sub></i></li>
+    <li><i><sub>CHOCCake RM10.00</sub></i></li></div>
+    </ul>
+    
+    <div class="accordion-header" id="C">Dessert-Kita</div>
+    <div class="accordion-content"><ul>
+    
+    <li><i><sub>BINGSu  RM17.00 </sub></i> </li>
+    <li><i><sub>Toast Bread RM9.00</sub></i></li>
+    
+    </ul></div>
+    </div>
+    
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+<br><br><br><br><br>
+</body>
+
+</html>
